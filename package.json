@@ -1,0 +1,23 @@
+{
+  "name": "testdemojs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testdemo.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lifeng-Liang/TestDemoJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lifeng-Liang/TestDemoJs/issues"
+  },
+  "homepage": "https://github.com/Lifeng-Liang/TestDemoJs#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
