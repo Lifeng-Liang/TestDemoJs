@@ -1,4 +1,4 @@
-function convert(url) {
+function convert(url, rule) {
 	return null;
 }
 
