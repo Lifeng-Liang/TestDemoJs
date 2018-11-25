@@ -1,5 +1,13 @@
+var Url = require('./url');
+var Result = require('./result');
+var RuleParser = require('./rule_parser');
+
 function convert(url, rule) {
-	return null;
+	var u = new Url(url);
+	var result = new Result("External/");
+	var rules = RuleParser(rule);
+	rules.forEach(r => r.Rename(u, result));
+	return result.Text;
 }
 
 var args = process.argv.splice(2);
