@@ -99,8 +99,8 @@ describe('Test', function () {
     });
 
     it('test Url With Unexpected Rule', function () {
-        var rule = [true, ["segments=2", "host=true"]];
-        chai.expect(() => convert("http://www.sina.com/test/1/2/3/", rule)).to.throw('rule [host] not supported.');
+        var rule = [true, ["segments=2", "username=true"]];
+        chai.expect(() => convert("http://www.sina.com/test/1/2/3/", rule)).to.throw('rule [username] not supported.');
     });
 
     it('test Url Not Match', function () {
