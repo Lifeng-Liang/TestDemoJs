@@ -105,12 +105,12 @@ describe('Test', function () {
 
     it('test Url Not Match', function () {
         var rule = [false, ["segments=3"]];
-        AssertIs("http://www.sina.com/test/1/2/3/", "External/HTTP/www.sina.com:80/test/1/");
-        AssertIs("http://www.sina.com/", "External/HTTP/www.sina.com:80//");
-        AssertIs("http://www.sina.com", "External/HTTP/www.sina.com:80//");
-        AssertIs("http://www.sina.com/test/1", "External/HTTP/www.sina.com:80/test/1/");
-        AssertIs("http://www.sina.com/test/1/", "External/HTTP/www.sina.com:80/test/1/");
-        AssertIs("http://www.sina.com/test", "External/HTTP/www.sina.com:80/test/");
-        AssertIs("http://www.sina.com:900/test", "External/HTTP/www.sina.com:900/test/");
+        AssertIs("http://www.sina.com/test/1/2/3/", "External/HTTP/www.sina.com:80/test/1/", rule);
+        AssertIs("http://www.sina.com/", "External/HTTP/www.sina.com:80//", rule);
+        AssertIs("http://www.sina.com", "External/HTTP/www.sina.com:80//", rule);
+        AssertIs("http://www.sina.com/test/1", "External/HTTP/www.sina.com:80/test/1/", rule);
+        AssertIs("http://www.sina.com/test/1/", "External/HTTP/www.sina.com:80/test/1/", rule);
+        AssertIs("http://www.sina.com/test", "External/HTTP/www.sina.com:80/test/", rule);
+        AssertIs("http://www.sina.com:900/test", "External/HTTP/www.sina.com:900/test/", rule);
     });
 });
